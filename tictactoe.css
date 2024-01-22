@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.cell{
+    height: 6.5rem;
+    width: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+}
+
+#cell1, #cell2, #cell4, #cell5{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#cell3, #cell6{
+    border-bottom: 2px solid black;
+}
+
+#cell7, #cell8{
+    border-right: 2px solid black;
+}
+
